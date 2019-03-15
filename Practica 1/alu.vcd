@@ -1,0 +1,631 @@
+$date
+	Wed Nov  7 14:18:16 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module alu_tb $end
+$var wire 1 ! t_z $end
+$var wire 1 " t_s $end
+$var wire 1 # t_c $end
+$var wire 4 $ t_R [3:0] $end
+$var reg 4 % t_A [3:0] $end
+$var reg 1 & t_Arit $end
+$var reg 4 ' t_B [3:0] $end
+$var reg 2 ( t_Op [1:0] $end
+$scope module mat $end
+$var wire 4 ) A [3:0] $end
+$var wire 2 * ALUOp [1:0] $end
+$var wire 4 + B [3:0] $end
+$var wire 1 & arit $end
+$var wire 1 # carry $end
+$var wire 1 , cin0 $end
+$var wire 1 - cpl $end
+$var wire 1 . op1_A $end
+$var wire 1 / op2_B $end
+$var wire 1 ! zero $end
+$var wire 4 0 smux [3:0] $end
+$var wire 1 " sign $end
+$var wire 1 1 c_out3 $end
+$var wire 1 2 c_out2 $end
+$var wire 1 3 c_out1 $end
+$var wire 1 4 c_out0 $end
+$var wire 4 5 R [3:0] $end
+$var wire 4 6 OP2 [3:0] $end
+$var wire 4 7 OP1 [3:0] $end
+$scope module c1 $end
+$var wire 1 - cpl $end
+$var wire 4 8 Sal [3:0] $end
+$var wire 4 9 Ent [3:0] $end
+$upscope $end
+$scope module cal0 $end
+$var wire 1 : a $end
+$var wire 1 & arit $end
+$var wire 1 ; b $end
+$var wire 1 , c_in $end
+$var wire 2 < s [1:0] $end
+$var wire 1 = salfa $end
+$var wire 1 > salcl $end
+$var wire 1 ? out $end
+$var wire 1 4 c_out $end
+$scope module mux $end
+$var wire 1 & s $end
+$var wire 1 ? out $end
+$var wire 1 = b $end
+$var wire 1 > a $end
+$upscope $end
+$scope module scl $end
+$var wire 1 : a $end
+$var wire 1 ; b $end
+$var wire 1 @ p_and $end
+$var wire 1 A p_not $end
+$var wire 1 B p_or $end
+$var wire 1 C p_xor $end
+$var wire 2 D s [1:0] $end
+$var wire 1 > out $end
+$scope module mux1 $end
+$var wire 1 @ a $end
+$var wire 1 B b $end
+$var wire 1 C c $end
+$var wire 1 A d $end
+$var wire 2 E s [1:0] $end
+$var reg 1 > out $end
+$upscope $end
+$upscope $end
+$scope module sfa $end
+$var wire 1 : a $end
+$var wire 1 ; b $end
+$var wire 1 , cin $end
+$var wire 1 = sum $end
+$var wire 1 4 cout $end
+$upscope $end
+$upscope $end
+$scope module cal1 $end
+$var wire 1 F a $end
+$var wire 1 & arit $end
+$var wire 1 G b $end
+$var wire 1 4 c_in $end
+$var wire 2 H s [1:0] $end
+$var wire 1 I salfa $end
+$var wire 1 J salcl $end
+$var wire 1 K out $end
+$var wire 1 3 c_out $end
+$scope module mux $end
+$var wire 1 & s $end
+$var wire 1 K out $end
+$var wire 1 I b $end
+$var wire 1 J a $end
+$upscope $end
+$scope module scl $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 L p_and $end
+$var wire 1 M p_not $end
+$var wire 1 N p_or $end
+$var wire 1 O p_xor $end
+$var wire 2 P s [1:0] $end
+$var wire 1 J out $end
+$scope module mux1 $end
+$var wire 1 L a $end
+$var wire 1 N b $end
+$var wire 1 O c $end
+$var wire 1 M d $end
+$var wire 2 Q s [1:0] $end
+$var reg 1 J out $end
+$upscope $end
+$upscope $end
+$scope module sfa $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 4 cin $end
+$var wire 1 I sum $end
+$var wire 1 3 cout $end
+$upscope $end
+$upscope $end
+$scope module cal2 $end
+$var wire 1 R a $end
+$var wire 1 & arit $end
+$var wire 1 S b $end
+$var wire 1 3 c_in $end
+$var wire 2 T s [1:0] $end
+$var wire 1 U salfa $end
+$var wire 1 V salcl $end
+$var wire 1 W out $end
+$var wire 1 2 c_out $end
+$scope module mux $end
+$var wire 1 & s $end
+$var wire 1 W out $end
+$var wire 1 U b $end
+$var wire 1 V a $end
+$upscope $end
+$scope module scl $end
+$var wire 1 R a $end
+$var wire 1 S b $end
+$var wire 1 X p_and $end
+$var wire 1 Y p_not $end
+$var wire 1 Z p_or $end
+$var wire 1 [ p_xor $end
+$var wire 2 \ s [1:0] $end
+$var wire 1 V out $end
+$scope module mux1 $end
+$var wire 1 X a $end
+$var wire 1 Z b $end
+$var wire 1 [ c $end
+$var wire 1 Y d $end
+$var wire 2 ] s [1:0] $end
+$var reg 1 V out $end
+$upscope $end
+$upscope $end
+$scope module sfa $end
+$var wire 1 R a $end
+$var wire 1 S b $end
+$var wire 1 3 cin $end
+$var wire 1 U sum $end
+$var wire 1 2 cout $end
+$upscope $end
+$upscope $end
+$scope module cal3 $end
+$var wire 1 ^ a $end
+$var wire 1 & arit $end
+$var wire 1 _ b $end
+$var wire 1 2 c_in $end
+$var wire 2 ` s [1:0] $end
+$var wire 1 a salfa $end
+$var wire 1 b salcl $end
+$var wire 1 c out $end
+$var wire 1 1 c_out $end
+$scope module mux $end
+$var wire 1 & s $end
+$var wire 1 c out $end
+$var wire 1 a b $end
+$var wire 1 b a $end
+$upscope $end
+$scope module scl $end
+$var wire 1 ^ a $end
+$var wire 1 _ b $end
+$var wire 1 d p_and $end
+$var wire 1 e p_not $end
+$var wire 1 f p_or $end
+$var wire 1 g p_xor $end
+$var wire 2 h s [1:0] $end
+$var wire 1 b out $end
+$scope module mux1 $end
+$var wire 1 d a $end
+$var wire 1 f b $end
+$var wire 1 g c $end
+$var wire 1 e d $end
+$var wire 2 i s [1:0] $end
+$var reg 1 b out $end
+$upscope $end
+$upscope $end
+$scope module sfa $end
+$var wire 1 ^ a $end
+$var wire 1 _ b $end
+$var wire 1 2 cin $end
+$var wire 1 a sum $end
+$var wire 1 1 cout $end
+$upscope $end
+$upscope $end
+$scope module mux1 $end
+$var wire 4 j a [3:0] $end
+$var wire 4 k b [3:0] $end
+$var wire 1 . s $end
+$var wire 4 l out [3:0] $end
+$upscope $end
+$scope module mux2 $end
+$var wire 4 m a [3:0] $end
+$var wire 4 n b [3:0] $end
+$var wire 1 / s $end
+$var wire 4 o out [3:0] $end
+$upscope $end
+$upscope $end
+$scope task check $end
+$var reg 4 p e_R [3:0] $end
+$var reg 1 q e_c $end
+$var reg 1 r e_s $end
+$var reg 1 s e_z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+xs
+xr
+xq
+bx p
+b1110 o
+b1110 n
+b1010 m
+b1010 l
+b1010 k
+b0 j
+b0 i
+b0 h
+0g
+1f
+0e
+1d
+1c
+1b
+1a
+b0 `
+1_
+1^
+b0 ]
+b0 \
+1[
+1Z
+1Y
+0X
+0W
+0V
+0U
+b0 T
+1S
+0R
+b0 Q
+b0 P
+0O
+1N
+0M
+1L
+0K
+1J
+0I
+b0 H
+1G
+1F
+b0 E
+b0 D
+0C
+0B
+1A
+0@
+0?
+0>
+0=
+b0 <
+0;
+0:
+b1110 9
+b1110 8
+b1010 7
+b1110 6
+b1000 5
+04
+13
+12
+11
+b1110 0
+1/
+1.
+0-
+0,
+b1110 +
+b0 *
+b1010 )
+b0 (
+b1110 '
+1&
+b1010 %
+b1000 $
+1#
+1"
+0!
+$end
+#2000
+1!
+0"
+0b
+b0 $
+b0 5
+0c
+0d
+1g
+0a
+0_
+b110 6
+b110 8
+b110 0
+b110 9
+b110 o
+b110 '
+b110 +
+b110 n
+1r
+1q
+0s
+b1000 p
+#4000
+1>
+0L
+1O
+1B
+1C
+14
+1!
+0G
+1;
+0W
+b0 $
+b0 5
+0?
+0d
+1g
+1Z
+1[
+0U
+12
+1-
+0=
+0_
+1S
+1,
+b101 6
+b101 8
+1V
+1b
+b1010 0
+b1010 9
+b1010 o
+b1 (
+b1 *
+b1 <
+b1 D
+b1 E
+b1 H
+b1 P
+b1 Q
+b1 T
+b1 \
+b1 ]
+b1 `
+b1 h
+b1 i
+b1010 '
+b1010 +
+b1010 n
+0r
+1s
+b0 p
+#6000
+1K
+0f
+0g
+1e
+0N
+0O
+1M
+1I
+03
+0W
+0#
+01
+0!
+0^
+0F
+0Z
+0[
+0U
+02
+0S
+1>
+b10 $
+b10 5
+0?
+0.
+b1 6
+b1 8
+0@
+1C
+1A
+0=
+0:
+1J
+1b
+b1110 0
+b1110 9
+b1110 o
+b0 7
+b0 l
+b11 (
+b11 *
+b11 <
+b11 D
+b11 E
+b11 H
+b11 P
+b11 Q
+b11 T
+b11 \
+b11 ]
+b11 `
+b11 h
+b11 i
+b1110 '
+b1110 +
+b1110 n
+b1011 %
+b1011 )
+b1011 k
+b1011 m
+#8000
+b10 $
+b10 5
+0W
+0Z
+0[
+0U
+0S
+0/
+b1 6
+b1 8
+0J
+0V
+0b
+b1110 0
+b1110 9
+b1110 o
+b10 (
+b10 *
+b10 <
+b10 D
+b10 E
+b10 H
+b10 P
+b10 Q
+b10 T
+b10 \
+b10 ]
+b10 `
+b10 h
+b10 i
+b1010 '
+b1010 +
+b1010 n
+b1110 %
+b1110 )
+b1110 k
+b1110 m
+0q
+0s
+b10 p
+#10000
+1"
+1c
+1Z
+1[
+1U
+1O
+1b
+0J
+0e
+1#
+11
+0M
+1S
+1d
+1f
+0L
+1N
+0B
+0C
+1^
+1F
+1_
+0G
+0;
+b1010 7
+b1010 l
+0!
+0=
+04
+b1100 6
+b1100 8
+0-
+1.
+1/
+0,
+b1000 $
+b1000 5
+0K
+0>
+b1100 0
+b1100 9
+b1100 o
+0&
+b0 (
+b0 *
+b0 <
+b0 D
+b0 E
+b0 H
+b0 P
+b0 Q
+b0 T
+b0 \
+b0 ]
+b0 `
+b0 h
+b0 i
+b1100 '
+b1100 +
+b1100 n
+b1010 %
+b1010 )
+b1010 k
+b1010 m
+#12000
+1=
+1,
+1K
+b1110 $
+b1110 5
+1W
+1J
+1V
+b1 (
+b1 *
+b1 <
+b1 D
+b1 E
+b1 H
+b1 P
+b1 Q
+b1 T
+b1 \
+b1 ]
+b1 `
+b1 h
+b1 i
+xr
+xq
+b1000 p
+#14000
+0"
+b110 $
+b110 5
+0c
+0b
+b10 (
+b10 *
+b10 <
+b10 D
+b10 E
+b10 H
+b10 P
+b10 Q
+b10 T
+b10 \
+b10 ]
+b10 `
+b10 h
+b10 i
+b1110 p
+#16000
+1?
+b101 $
+b101 5
+0K
+1>
+0J
+b11 (
+b11 *
+b11 <
+b11 D
+b11 E
+b11 H
+b11 P
+b11 Q
+b11 T
+b11 \
+b11 ]
+b11 `
+b11 h
+b11 i
+b110 p
+#18000
+b101 p
